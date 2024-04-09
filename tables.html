@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        color: rgb(255, 253, 253);
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      tr:nth-child(even) {
+        background-color: #5f5f5f;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(76, 58, 58);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Country</th>
+        <th>Country code</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Nepal</td>
+        <td>np</td>
+        <td>pemanamgurtamang7@gmail.com</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>ind</td>
+        <td>pemanamgurtamang7@gmail.com</td>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>4500</td>
+        <td>pemanamgurtamang7@gmail.com</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th rowspan="2">Country</th>
+        <td>Nepal</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <th>Code</th>
+        <td>np</td>
+        <td>jp</td>
+      </tr>
+    </table>
+  </body>
+</html>
