@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card-3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        background-color: grey;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        color: white;
+      }
+      .leftBox {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 40%;
+        height: 70%;
+        background-color: rgb(73, 9, 133);
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: sans-serif;
+      }
+      .leftBox p {
+        width: 70%;
+      }
+      .leftBox h2 {
+        font-size: 2rem;
+        width: 70%;
+      }
+      .rightBox {
+        background-image: url("./downloadtwo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 40%;
+        height: 70%;
+        position: relative;
+        cursor: pointer;
+      }
+      .textTransi {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(56, 55, 55, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 2s ease-in-out 0s;
+        font-size: 2rem;
+      }
+      .rightBox:hover .textTransi {
+        opacity: 1;
+      }
+      .links {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+      }
+      .link1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        animation: 3s ease-in-out 1s infinite alternate none running
+          linkAnimation;
+        background-color: rgb(123, 165, 9);
+      }
+      @keyframes linkAnimation {
+        from {
+          top: 0;
+          left: 0;
+        }
+        to {
+          top: 0;
+          left: 60%;
+        }
+      }
+      .link2 {
+        opacity: 1;
+        animation: 3s ease-in-out 1s infinite alternate none running
+          linkAnimation2;
+        background-color: rgb(125, 138, 2);
+        border-radius: 6px;
+        padding: 3px;
+      }
+      @keyframes linkAnimation2 {
+        from {
+          background-color: rgb(149, 151, 151);
+          transform: rotate(0deg);
+          font-size: 0.9rem;
+        }
+        to {
+          background-color: rgb(73, 73, 73);
+          transform: rotate(360deg);
+          font-size: 1.4rem;
+        }
+      }
+      .link3 {
+        position: relative;
+        animation: 3s ease-in-out 1s infinite alternate none running
+          linkAnimation3;
+        background-color: rgb(4, 75, 136);
+      }
+      @keyframes linkAnimation3 {
+        from {
+          top: 0;
+          right: 0;
+        }
+        to {
+          top: 0;
+          right: 60%;
+        }
+      }
+      @media (max-width: 878px) {
+        .leftBox {
+          overflow: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftBox">
+        <h2>Get Inside To Grow Your Business.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          provident repudiandae, blanditiis, mollitia est pariatur eveniet ab
+          eos cum, facere ipsa? A, voluptatum. Autem a commodi inventore nisi
+          fugit totam error repellat! .
+        </p>
+        <div class="links">
+          <div class="link1">
+            10K+ <br />
+            comments
+          </div>
+          <div class="link2">
+            214<br />
+            Paid Users
+          </div>
+          <div class="link3">
+            12M+ <br />
+            Views
+          </div>
+        </div>
+      </div>
+      <div class="rightBox">
+        <span class="textTransi">Click here to view image</span>
+      </div>
+    </div>
+  </body>
+</html>
