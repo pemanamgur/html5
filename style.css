@@ -3,107 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-#navList{
-    list-style-type: none;
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
- a  {
-    text-decoration: none;
-    color: azure;
-}
-.container{
+body{
     height: 100vh;
     width: 100vw;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    overflow-x: hidden;
 }
-.navContainer{
-    width: 100vw;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    min-height: 60px;
-}
-#navLogo{
-    font-size: 2.8rem;
-    color: azure;
-}
-#rightNav{
-    display: flex;
-    gap: 42px;
-}
-.contentBox{
-    width: 70%;
-    margin: auto;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    box-shadow: 1px 5px 14px black;
-    border-radius: 12px;
-}
-.footerBox{
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
-    text-align: center;
-    min-height: 23px;
-}
-.footerBox p{
-    color: azure;
-    font-size: 1.2rem;
+.container{
+    height: 100%;
+    width : 100%;
+    background-color: black;
+    gap: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,200px);
+    padding: 1rem;
+    /*justify-items: center;
+    justify-items: center;
+    align-items: center;*/
+    place-items: center;
 }
 .item{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-family: sans-serif;
-
-}
-.leftBox{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-h1{
-    text-align: center;
-    color: rgb(123, 0, 255);
-}
-.rightBox img{
-  border-radius: 40px;
-  transition: all 1.8s  linear 0s;
-}
-.rightBox:hover{
-   transform: scale(1.1);
-}
-section{
-    margin: 55px;
-    cursor: pointer;
-}
-.rightBox{
-    position: relative;
-    overflow: hidden;
-    transition: all 0.6s linear 0s;
-    box-shadow: 2px 3px 4px rgb(80, 80, 80);
-}
-.rightBox .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(40, 39, 39, 0.7);   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 17px;
-    opacity: 0;
-    transition: all 0.3s linear 0s;
-}
-.rightBox:hover .overlay{
-    opacity: 1;
-}
-.rightBox .overlay span{
-    color:  white;
-    font-size: 1.2rem;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 5px solid white;
+    /*
+    align-self: stretch;
+    justify-self: stretch;
+    place-self: center ;
+    */
 }
